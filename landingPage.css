@@ -33,6 +33,48 @@ body {
   color: var(--text);
 }
 
+.btnDark {
+  position: absolute;
+  z-index: 110;
+  top: 12%;
+  left: 2%;
+  width: 110px;
+  height: 35px;
+  /* background: red; */
+  border-radius: 4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnDark button {
+  width: 100%;
+  height: 100%;
+  border-radius: 4rem;
+  background: var(--text);
+  /* border: 1px solid var(--text); */
+  color: var(--bg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.btnDark i {
+  color: var(--bg);
+  font-size: 1.2rem;
+  margin: 0 0.2rem;
+}
+
+.darkMode {
+  --bg: #2d3748;
+  --text: #ffffff;
+  /* --sec-bg: #4a5568;
+  --sec-cl: #e2e8f0; */
+}
+
 header {
   background-color: var(--bg);
   color: var(--text);
@@ -42,8 +84,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 100;
-  position: relative;
 }
 
 .logo {
@@ -60,6 +100,7 @@ header {
   max-width: 100%;
   margin: 0 10px;
   display: block;
+  border-radius: 0.4rem;
 }
 
 .logo .name {
@@ -119,9 +160,9 @@ header {
   width: 100%;
   max-height: 0;
   overflow: hidden;
-  background: aliceblue;
+  background: var(--sec-bg);
   top: 10%;
-  z-index: 50;
+  z-index: 120;
   opacity: 0;
   transform: translateY(-10px);
   transition:
@@ -156,6 +197,13 @@ li a:hover {
   text-decoration-color: var(--text);
   font-weight: 500;
   font-size: 18px;
+}
+
+.mainContant .landing {
+  width: 100%;
+  height: 90vh;
+  background: url("Images/w\ \(12\).jpeg") no-repeat center center/cover;
+  filter: brightness(0.5);
 }
 
 /* Responsive Design */

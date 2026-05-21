@@ -15,3 +15,19 @@ if (menuButton && mobileMenu) {
     }
   });
 }
+
+const btnTxt = document.querySelector(".mode-text");
+const btnIcon = document.querySelector(".light i");
+
+function toggleDarkMode() {
+  document.body.classList.toggle("darkMode");
+  if (document.body.classList.contains("darkMode")) {
+    btnTxt.textContent = "Light Mode";
+    btnIcon.classList.add("fa-moon");
+    btnIcon.classList.remove("fa-sun");
+  } else {
+    btnTxt.textContent = "Dark Mode";
+    btnIcon.classList.add("fa-sun");
+    btnIcon.classList.remove("fa-moon");
+  }
+}
