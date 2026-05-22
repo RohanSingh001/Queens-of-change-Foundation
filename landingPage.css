@@ -351,6 +351,90 @@ li a:hover {
   background: #ff758f;
 }
 
+footer {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--text);
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+footer .footLogo {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.footLogo .bottomLogo {
+  width: 50px;
+  margin-bottom: 15px;
+  height: 50px;
+}
+
+.footLogo .footname {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--bg);
+}
+
+.footLogo .footLine {
+  font-size: 0.8rem;
+  color: var(--bg);
+}
+
+footer .footLinks {
+  width: 100%;
+  height: 50%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footLinks .innerLinks {
+  width: 35%;
+  height: 80%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.innerLinks .linkHead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--bg);
+  margin-bottom: 20px;
+}
+
+.innerLinks ul li {
+  list-style: none;
+  font-size: 1rem;
+  color: var(--bg);
+  margin-bottom: 6px;
+}
+
+.innerLinks ul li a {
+  font-size: 1rem;
+  color: var(--bg);
+}
+
+footer .copyRights {
+  width: 100%;
+  height: 20%;
+  background-color: green;
+}
+
 /* Animation */
 
 @keyframes fadeIn {
@@ -390,6 +474,12 @@ li a:hover {
   .about .aboutContent {
     font-size: 1rem;
   }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* For Small Screens(577px to 767px) */
@@ -416,6 +506,16 @@ li a:hover {
 
   .cards .card {
     width: 60%;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footLinks .innerLinks {
+    width: 25%;
   }
 }
 
@@ -455,6 +555,28 @@ li a:hover {
 
   .cards .card {
     width: 50%;
+  }
+
+  footer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .footLogo {
+    width: 40%;
+    height: 80%;
+    border: none;
+  }
+
+  footer .footLinks {
+    width: 60%;
+    height: 80%;
+  }
+
+  .footLinks .innerLinks {
+    width: 30%;
   }
 }
 
@@ -500,6 +622,28 @@ li a:hover {
     width: 30%;
     height: 40%;
     box-shadow: 6px 9px 15px 2px var(--text);
+  }
+
+  footer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .footLogo {
+    width: 40%;
+    height: 80%;
+    border: none;
+  }
+
+  footer .footLinks {
+    width: 60%;
+    height: 80%;
+  }
+
+  .footLinks .innerLinks {
+    width: 20%;
   }
 }
 
@@ -548,5 +692,27 @@ li a:hover {
     width: 30%;
     height: 60%;
     box-shadow: 6px 9px 15px 2px var(--text);
+  }
+
+  footer {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .footLogo {
+    width: 40%;
+    height: 80%;
+    border: none;
+  }
+
+  footer .footLinks {
+    width: 60%;
+    height: 80%;
+  }
+
+  .footLinks .innerLinks {
+    width: 20%;
   }
 }
