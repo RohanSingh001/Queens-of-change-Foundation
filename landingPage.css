@@ -5,6 +5,8 @@
   --text: #2d3748;
   --sec-bg: #a0aec0;
   --sec-cl: #f5f7fa;
+  --bgth: rgb(243, 222, 219);
+  --dark: rgb(144, 0, 61);
 
   /* --border: rgba(15, 23, 42, 0.08);
         --shadow: 0 30px 75px rgba(15, 23, 42, 0.08); */
@@ -29,7 +31,7 @@ body {
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: var(--bg);
+  background-color: var(--bgth);
   color: var(--text);
 }
 
@@ -259,13 +261,20 @@ li a:hover {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+.workImg .workImgHead {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .workImg .cards {
   width: 80%;
-  height: 90%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,6 +308,49 @@ li a:hover {
   background: url("Images/card3.jpeg") no-repeat center center/cover;
 }
 
+.mainContant .about {
+  width: 100%;
+  height: 90vh;
+  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 1rem;
+}
+
+.about .aboutHead {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--text);
+  color: var(--text);
+}
+
+.about .aboutContent {
+  width: 80%;
+  font-size: 1.1rem;
+  text-align: start;
+  color: var(--text);
+}
+
+.about .aboutJoin {
+  width: 120px;
+  height: 40px;
+  border-radius: 1.2rem;
+  border: none;
+  background: #ff4d6d;
+  color: white !important;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about .aboutJoin:hover {
+  transform: scale(1.08);
+  background: #ff758f;
+}
+
 /* Animation */
 
 @keyframes fadeIn {
@@ -324,6 +376,19 @@ li a:hover {
     display: flex;
     align-items: center;
     justify-content: end;
+  }
+
+  .about {
+    height: 100vh !important;
+    justify-content: space-between !important;
+  }
+
+  .about .aboutHead {
+    font-size: 1.2rem;
+  }
+
+  .about .aboutContent {
+    font-size: 1rem;
   }
 }
 
@@ -481,7 +546,7 @@ li a:hover {
 
   .cards .card {
     width: 30%;
-    height: 50%;
+    height: 60%;
     box-shadow: 6px 9px 15px 2px var(--text);
   }
 }
