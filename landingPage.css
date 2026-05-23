@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --bg: #ffffff;
-  --text: #2d3748;
-  --sec-bg: #a0aec0;
-  --sec-cl: #f5f7fa;
-  --bgth: rgb(243, 222, 219);
-  --dark: rgb(144, 0, 61);
+  --bg: #fbf5f0;
+  --text: #2f3b46;
+  --sec-bg: #d8c2b0;
+  --sec-cl: #f7f1ec;
+  --bgth: #f4e8e0;
+  --accent: #af476a;
+  --accent-soft: #e6b5a8;
+  --dark: #392a34;
 
   /* --border: rgba(15, 23, 42, 0.08);
         --shadow: 0 30px 75px rgba(15, 23, 42, 0.08); */
@@ -243,7 +245,7 @@ li a:hover {
   padding: 15px 35px;
   border: none;
   border-radius: 30px;
-  background: #ff4d6d;
+  background: var(--accent);
   color: white !important;
   font-size: 1rem;
   cursor: pointer;
@@ -252,7 +254,7 @@ li a:hover {
 
 .content .landJoin:hover {
   transform: scale(1.08);
-  background: #ff758f;
+  background: var(--accent-soft);
   text-decoration: underline;
 }
 
@@ -352,7 +354,7 @@ li a:hover {
   height: 40px;
   border-radius: 1.2rem;
   border: none;
-  background: #ff4d6d;
+  background: var(--accent);
   color: white !important;
   font-size: 1rem;
   cursor: pointer;
@@ -361,7 +363,7 @@ li a:hover {
 
 .about .aboutJoin:hover {
   transform: scale(1.08);
-  background: #ff758f;
+  background: var(--accent-soft);
   text-decoration: underline;
 }
 
