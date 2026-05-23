@@ -280,6 +280,7 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  perspective: 1200px;
 }
 
 .cards .card {
@@ -287,14 +288,25 @@ li a:hover {
   height: 30%;
   border-radius: 1rem;
   box-shadow: 4px 4px 10px 1px var(--text);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  will-change: transform;
+  transition: box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  animation: flipCard 0.8s ease forwards;
   box-shadow: 8px 12px 20px 4px var(--text);
+}
+
+@keyframes flipCard {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
 }
 
 .card1 {
