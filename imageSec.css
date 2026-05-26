@@ -10,6 +10,7 @@
 }
 
 .workImg .workImgHead {
+  text-decoration: underline;
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 2rem;
